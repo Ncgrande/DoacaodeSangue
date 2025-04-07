@@ -53,10 +53,18 @@
 }
 
 
-@media (max-width: 950px){
-    .logo, .menu, .bts, .img-banner{
+@media (max-width: 768px){
+    .bts, .img-banner{
     width: 100%;
       }
+    .logo{
+    display: none;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
 }
 
 @media (max-width: 950px){

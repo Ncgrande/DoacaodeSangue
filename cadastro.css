@@ -46,7 +46,7 @@
     margin-top: 10px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     .header__container {
         flex-direction: column;
         align-items: flex-start;
@@ -64,7 +64,9 @@
     .menu__item {
         margin: 5px 0;
     }
-
+    .header__logo{
+        display: none;
+    }
     .header__button {
         width: 100%;
         text-align: center;
