@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Doe Sangue</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="cadastro.css" />
+  </head>
+  <body>
+    <div id="cadastro-page">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__logo">
+            <a class="navbar-brand" href="index.html"
+              ><img src="logo.png" alt="Logo"
+            /></a>
+          </div>
+
+          <nav class="header__menu">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavCadastro"
+              aria-controls="navbarNavCadastro"
+              aria-expanded="false"
+              aria-label="Alternar navegação"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link" href="requisitos.html"
+                  >Requisitos para Doação</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="quemsomos.html"
+                  >Quem Somos</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="ondedoar.html">Onde Doar</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="contato.html">Contato</a>
+              </li>
+            </ul>
+          </nav>
+
+          
+        </div>
+      </header>
+
+      
+      <section class="section-cadastro">
+        <div class="container section-cadastro__container">
+          <h2 class="section-cadastro__title">Cadastro de Doador</h2>
+          <form
+            class="section-cadastro__form"
+            action="../../cadastroDoador.php"
+            method="POST"
+          >
+            <div class="mb-3">
+              <label for="nomeCompleto" class="form-label">Nome Completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nomeCompleto"
+                name="nomeCompleto"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="dataNascimento" class="form-label"
+                >Data de Nascimento</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="dataNascimento"
+                name="dataNascimento"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="cpf" class="form-label">CPF</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cpf"
+                name="cpf"
+                placeholder="Digite seu CPF"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="tipoSanguineo" class="form-label"
+                >Tipo Sanguíneo</label
+              >
+              <select
+                class="form-select"
+                id="tipoSanguineo"
+                name="tipoSanguineo"
+                required
+              >
+                <option selected disabled value="">
+                  Selecione seu tipo sanguíneo
+                </option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="estado" class="form-label">Estado</label>
+              <select class="form-select" id="estado" name="estado" required>
+                <option value="PR" selected>Paraná</option>
+                
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="cidade" class="form-label">Cidade</label>
+              <select class="form-select" id="cidade" name="cidade" required>
+                <option selected disabled value="">Selecione sua cidade</option>
+                
+                <option value="Abatiá">Abatiá</option>
+                <option value="Adrianópolis">Adrianópolis</option>
+                <option value="Agudos do Sul">Agudos do Sul</option>
+                <option value="Almirante Tamandaré">Almirante Tamandaré</option>
+                <option value="Altamira do Paraná">Altamira do Paraná</option>
+                <option value="Alto Paraná">Alto Paraná</option>
+                <option value="Alto Piquiri">Alto Piquiri</option>
+                <option value="Altônia">Altônia</option>
+                <option value="Alvorada do Sul">Alvorada do Sul</option>
+                <option value="Amaporã">Amaporã</option>
+                <option value="Ampére">Ampére</option>
+                <option value="Anahy">Anahy</option>
+                <option value="Andirá">Andirá</option>
+                <option value="Ângulo">Ângulo</option>
+                <option value="Antonina">Antonina</option>
+                <option value="Antônio Olinto">Antônio Olinto</option>
+                <option value="Apucarana">Apucarana</option>
+                <option value="Arapongas">Arapongas</option>
+                <option value="Arapoti">Arapoti</option>
+                <option value="Arapuã">Arapuã</option>
+                <option value="Araruna">Araruna</option>
+                <option value="Araucária">Araucária</option>
+                <option value="Ariranha do Ivaí">Ariranha do Ivaí</option>
+                <option value="Assaí">Assaí</option>
+                <option value="Assis Chateaubriand">Assis Chateaubriand</option>
+                <option value="Astorga">Astorga</option>
+                <option value="Atalaia">Atalaia</option>
+                <option value="Balsa Nova">Balsa Nova</option>
+                <option value="Bandeirantes">Bandeirantes</option>
+                <option value="Barbosa Ferraz">Barbosa Ferraz</option>
+                <option value="Barra do Jacaré">Barra do Jacaré</option>
+                <option value="Barracão">Barracão</option>
+                <option value="Bela Vista da Caroba">
+                  Bela Vista da Caroba
+                </option>
+                <option value="Bela Vista do Paraíso">
+                  Bela Vista do Paraíso
+                </option>
+                <option value="Bituruna">Bituruna</option>
+                <option value="Boa Esperança">Boa Esperança</option>
+                <option value="Boa Esperança do Iguaçu">
+                  Boa Esperança do Iguaçu
+                </option>
+                <option value="Boa Ventura de São Roque">
+                  Boa Ventura de São Roque
+                </option>
+                <option value="Boa Vista da Aparecida">
+                  Boa Vista da Aparecida
+                </option>
+                <option value="Bocaiúva do Sul">Bocaiúva do Sul</option>
+                <option value="Bom Jesus do Sul">Bom Jesus do Sul</option>
+                <option value="Bom Sucesso">Bom Sucesso</option>
+                <option value="Bom Sucesso do Sul">Bom Sucesso do Sul</option>
+                <option value="Borrazópolis">Borrazópolis</option>
+                <option value="Braganey">Braganey</option>
+                <option value="Brasilândia do Sul">Brasilândia do Sul</option>
+                <option value="Cafeara">Cafeara</option>
+                <option value="Cafelândia">Cafelândia</option>
+                <option value="Cafezal do Sul">Cafezal do Sul</option>
+                <option value="Califórnia">Califórnia</option>
+                <option value="Cambará">Cambará</option>
+                <option value="Cambé">Cambé</option>
+                <option value="Cambira">Cambira</option>
+                <option value="Campina da Lagoa">Campina da Lagoa</option>
+                <option value="Campina do Simão">Campina do Simão</option>
+                <option value="Campina Grande do Sul">
+                  Campina Grande do Sul
+                </option>
+                <option value="Campo Bonito">Campo Bonito</option>
+                <option value="Campo do Tenente">Campo do Tenente</option>
+                <option value="Campo Largo">Campo Largo</option>
+                <option value="Campo Magro">Campo Magro</option>
+                <option value="Campo Mourão">Campo Mourão</option>
+                <option value="Cândido de Abreu">Cândido de Abreu</option>
+                <option value="Candói">Candói</option>
+                <option value="Cantagalo">Cantagalo</option>
+                <option value="Capanema">Capanema</option>
+                <option value="Capitão Leônidas Marques">
+                  Capitão Leônidas Marques
+                </option>
+                <option value="Carambeí">Carambeí</option>
+                <option value="Carlópolis">Carlópolis</option>
+                <option value="Cascavel">Cascavel</option>
+                <option value="Castro">Castro</option>
+                <option value="Catanduvas">Catanduvas</option>
+                <option value="Centenário do Sul">Centenário do Sul</option>
+                <option value="Cerro Azul">Cerro Azul</option>
+                <option value="Céu Azul">Céu Azul</option>
+                <option value="Chopinzinho">Chopinzinho</option>
+                <option value="Cianorte">Cianorte</option>
+                <option value="Cidade Gaúcha">Cidade Gaúcha</option>
+                <option value="Clevelândia">Clevelândia</option>
+                <option value="Colombo">Colombo</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Congonhinhas">Congonhinhas</option>
+                <option value="Conselheiro Mairinck">
+                  Conselheiro Mairinck
+                </option>
+                <option value="Contenda">Contenda</option>
+                <option value="Corbélia">Corbélia</option>
+                <option value="Cornélio Procópio">Cornélio Procópio</option>
+                <option value="Coronel Domingos Soares">
+                  Coronel Domingos Soares
+                </option>
+                <option value="Coronel Vivida">Coronel Vivida</option>
+                <option value="Corumbataí do Sul">Corumbataí do Sul</option>
+                <option value="Cruzeiro do Iguaçu">Cruzeiro do Iguaçu</option>
+                <option value="Cruzeiro do Oeste">Cruzeiro do Oeste</option>
+                <option value="Cruzeiro do Sul">Cruzeiro do Sul</option>
+                <option value="Cruz Machado">Cruz Machado</option>
+                <option value="Cruzmaltina">Cruzmaltina</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Curiúva">Curiúva</option>
+                <option value="Diamante do Norte">Diamante do Norte</option>
+                <option value="Diamante do Sul">Diamante do Sul</option>
+                <option value="Diamante D'Oeste">Diamante D'Oeste</option>
+                <option value="Dois Vizinhos">Dois Vizinhos</option>
+                <option value="Douradina">Douradina</option>
+                <option value="Doutor Camargo">Doutor Camargo</option>
+                <option value="Doutor Ulysses">Doutor Ulysses</option>
+                <option value="Enéas Marques">Enéas Marques</option>
+                <option value="Engenheiro Beltrão">Engenheiro Beltrão</option>
+                <option value="Esperança Nova">Esperança Nova</option>
+                <option value="Entre Rios do Oeste">Entre Rios do Oeste</option>
+                <option value="Espigão Alto do Iguaçu">
+                  Espigão Alto do Iguaçu
+                </option>
+                <option value="Farol">Farol</option>
+                <option value="Faxinal">Faxinal</option>
+                <option value="Fazenda Rio Grande">Fazenda Rio Grande</option>
+                <option value="Fênix">Fênix</option>
+                <option value="Fernandes Pinheiro">Fernandes Pinheiro</option>
+                <option value="Figueira">Figueira</option>
+                <option value="Flor da Serra do Sul">
+                  Flor da Serra do Sul
+                </option>
+                <option value="Floraí">Floraí</option>
+                <option value="Floresta">Floresta</option>
+                <option value="Florestópolis">Florestópolis</option>
+                <option value="Flórida">Flórida</option>
+                <option value="Formosa do Oeste">Formosa do Oeste</option>
+                <option value="Foz do Iguaçu">Foz do Iguaçu</option>
+                <option value="Foz do Jordão">Foz do Jordão</option>
+                <option value="Francisco Alves">Francisco Alves</option>
+                <option value="Francisco Beltrão">Francisco Beltrão</option>
+                <option value="General Carneiro">General Carneiro</option>
+                <option value="Godoy Moreira">Godoy Moreira</option>
+                <option value="Goioerê">Goioerê</option>
+                <option value="Goioxim">Goioxim</option>
+                <option value="Grandes Rios">Grandes Rios</option>
+                <option value="Guaíra">Guaíra</option>
+                <option value="Guairaçá">Guairaçá</option>
+                <option value="Guamiranga">Guamiranga</option>
+                <option value="Guapirama">Guapirama</option>
+                <option value="Guaporema">Guaporema</option>
+                <option value="Guaraci">Guaraci</option>
+                <option value="Guaraniaçu">Guaraniaçu</option>
+                <option value="Guarapuava">Guarapuava</option>
+                <option value="Guaraqueçaba">Guaraqueçaba</option>
+                <option value="Guaratuba">Guaratuba</option>
+                <option value="Honório Serpa">Honório Serpa</option>
+                <option value="Ibaiti">Ibaiti</option>
+                <option value="Ibema">Ibema</option>
+                <option value="Ibiporã">Ibiporã</option>
+                <option value="Icaraíma">Icaraíma</option>
+                <option value="Iguaraçu">Iguaraçu</option>
+                <option value="Iguatu">Iguatu</option>
+                <option value="Imbaú">Imbaú</option>
+                <option value="Imbituva">Imbituva</option>
+                <option value="Inácio Martins">Inácio Martins</option>
+                <option value="Inajá">Inajá</option>
+                <option value="Indianópolis">Indianópolis</option>
+                <option value="Ipiranga">Ipiranga</option>
+                <option value="Iporã">Iporã</option>
+                <option value="Iracema do Oeste">Iracema do Oeste</option>
+                <option value="Irati">Irati</option>
+                <option value="Iretama">Iretama</option>
+                <option value="Itaguajé">Itaguajé</option>
+                <option value="Itaipulândia">Itaipulândia</option>
+                <option value="Itambaracá">Itambaracá</option>
+                <option value="Itambé">Itambé</option>
+                <option value="Itapejara d'Oeste">Itapejara d'Oeste</option>
+                <option value="Itaperuçu">Itaperuçu</option>
+                <option value="Itaúna do Sul">Itaúna do Sul</option>
+                <option value="Ivaí">Ivaí</option>
+                <option value="Ivaiporã">Ivaiporã</option>
+                <option value="Ivaté">Ivaté</option>
+                <option value="Ivatuba">Ivatuba</option>
+                <option value="Jaboti">Jaboti</option>
+                <option value="Jacarezinho">Jacarezinho</option>
+                <option value="Jaguapitã">Jaguapitã</option>
+                <option value="Jaguariaíva">Jaguariaíva</option>
+                <option value="Jandaia do Sul">Jandaia do Sul</option>
+                <option value="Janiópolis">Janiópolis</option>
+                <option value="Japira">Japira</option>
+                <option value="Japurá">Japurá</option>
+                <option value="Jardim Alegre">Jardim Alegre</option>
+                <option value="Jardim Olinda">Jardim Olinda</option>
+                <option value="Jataizinho">Jataizinho</option>
+                <option value="Jesuítas">Jesuítas</option>
+                <option value="Joaquim Távora">Joaquim Távora</option>
+                <option value="Jundiaí do Sul">Jundiaí do Sul</option>
+                <option value="Juranda">Juranda</option>
+                <option value="Jussara">Jussara</option>
+                <option value="Kaloré">Kaloré</option>
+                <option value="Lapa">Lapa</option>
+                <option value="Laranjal">Laranjal</option>
+                <option value="Laranjeiras do Sul">Laranjeiras do Sul</option>
+                <option value="Leópolis">Leópolis</option>
+                <option value="Lidianópolis">Lidianópolis</option>
+                <option value="Lindoeste">Lindoeste</option>
+                <option value="Loanda">Loanda</option>
+                <option value="Lobato">Lobato</option>
+                <option value="Londrina">Londrina</option>
+                <option value="Luiziana">Luiziana</option>
+                <option value="Lunardelli">Lunardelli</option>
+                <option value="Lupionópolis">Lupionópolis</option>
+                <option value="Mallet">Mallet</option>
+                <option value="Mamborê">Mamborê</option>
+                <option value="Mandaguaçu">Mandaguaçu</option>
+                <option value="Mandaguari">Mandaguari</option>
+                <option value="Mandirituba">Mandirituba</option>
+                <option value="Manfrinópolis">Manfrinópolis</option>
+                <option value="Mangueirinha">Mangueirinha</option>
+                <option value="Manoel Ribas">Manoel Ribas</option>
+                <option value="Marechal Cândido Rondon">
+                  Marechal Cândido Rondon
+                </option>
+                <option value="Maria Helena">Maria Helena</option>
+                <option value="Marialva">Marialva</option>
+                <option value="Marilândia do Sul">Marilândia do Sul</option>
+                <option value="Marilena">Marilena</option>
+                <option value="Mariluz">Mariluz</option>
+                <option value="Maringá">Maringá</option>
+                <option value="Mariópolis">Mariópolis</option>
+                <option value="Maripá">Maripá</option>
+                <option value="Marmeleiro">Marmeleiro</option>
+                <option value="Marquinho">Marquinho</option>
+                <option value="Marumbi">Marumbi</option>
+                <option value="Matelândia">Matelândia</option>
+                <option value="Matinhos">Matinhos</option>
+                <option value="Mato Rico">Mato Rico</option>
+                <option value="Mauá da Serra">Mauá da Serra</option>
+                <option value="Medianeira">Medianeira</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Mirador">Mirador</option>
+                <option value="Miraselva">Miraselva</option>
+                <option value="Missal">Missal</option>
+                <option value="Moreira Sales">Moreira Sales</option>
+                <option value="Morretes">Morretes</option>
+                <option value="Munhoz de Melo">Munhoz de Melo</option>
+                <option value="Nossa Senhora das Graças">
+                  Nossa Senhora das Graças
+                </option>
+                <option value="Nova Aliança do Ivaí">
+                  Nova Aliança do Ivaí
+                </option>
+                <option value="Nova América da Colina">
+                  Nova América da Colina
+                </option>
+                <option value="Nova Aurora">Nova Aurora</option>
+                <option value="Nova Cantu">Nova Cantu</option>
+                <option value="Nova Esperança">Nova Esperança</option>
+                <option value="Nova Esperança do Sudoeste">
+                  Nova Esperança do Sudoeste
+                </option>
+                <option value="Nova Fátima">Nova Fátima</option>
+                <option value="Nova Laranjeiras">Nova Laranjeiras</option>
+                <option value="Nova Londrina">Nova Londrina</option>
+                <option value="Nova Olímpia">Nova Olímpia</option>
+                <option value="Nova Prata do Iguaçu">
+                  Nova Prata do Iguaçu
+                </option>
+                <option value="Nova Santa Bárbara">Nova Santa Bárbara</option>
+                <option value="Nova Santa Rosa">Nova Santa Rosa</option>
+                <option value="Nova Tebas">Nova Tebas</option>
+                <option value="Novo Itacolomi">Novo Itacolomi</option>
+                <option value="Ortigueira">Ortigueira</option>
+                <option value="Ourizona">Ourizona</option>
+                <option value="Ouro Verde do Oeste">Ouro Verde do Oeste</option>
+                <option value="Paiçandu">Paiçandu</option>
+                <option value="Palmas">Palmas</option>
+                <option value="Palmeira">Palmeira</option>
+                <option value="Palmital">Palmital</option>
+                <option value="Palotina">Palotina</option>
+                <option value="Paraíso do Norte">Paraíso do Norte</option>
+                <option value="Paranacity">Paranacity</option>
+                <option value="Paranaguá">Paranaguá</option>
+                <option value="Paranapoema">Paranapoema</option>
+                <option value="Paranavaí">Paranavaí</option>
+                <option value="Pato Bragado">Pato Bragado</option>
+                <option value="Pato Branco">Pato Branco</option>
+                <option value="Paula Freitas">Paula Freitas</option>
+                <option value="Paulo Frontin">Paulo Frontin</option>
+                <option value="Peabiru">Peabiru</option>
+                <option value="Perobal">Perobal</option>
+                <option value="Pérola">Pérola</option>
+                <option value="Pérola d'Oeste">Pérola d'Oeste</option>
+                <option value="Piên">Piên</option>
+                <option value="Pinhais">Pinhais</option>
+                <option value="Pinhal de São Bento">Pinhal de São Bento</option>
+                <option value="Pinhalão">Pinhalão</option>
+                <option value="Pinhão">Pinhão</option>
+                <option value="Piraí do Sul">Piraí do Sul</option>
+                <option value="Piraquara">Piraquara</option>
+                <option value="Pitanga">Pitanga</option>
+                <option value="Pitangueiras">Pitangueiras</option>
+                <option value="Planaltina do Paraná">
+                  Planaltina do Paraná
+                </option>
+                <option value="Planalto">Planalto</option>
+                <option value="Ponta Grossa">Ponta Grossa</option>
+                <option value="Pontal do Paraná">Pontal do Paraná</option>
+                <option value="Porecatu">Porecatu</option>
+                <option value="Porto Amazonas">Porto Amazonas</option>
+                <option value="Porto Barreiro">Porto Barreiro</option>
+                <option value="Porto Rico">Porto Rico</option>
+                <option value="Porto Vitória">Porto Vitória</option>
+                <option value="Prado Ferreira">Prado Ferreira</option>
+                <option value="Pranchita">Pranchita</option>
+                <option value="Presidente Castelo Branco">
+                  Presidente Castelo Branco
+                </option>
+                <option value="Primeiro de Maio">Primeiro de Maio</option>
+                <option value="Prudentópolis">Prudentópolis</option>
+                <option value="Quarto Centenário">Quarto Centenário</option>
+                <option value="Quatiguá">Quatiguá</option>
+                <option value="Quatro Barras">Quatro Barras</option>
+                <option value="Quatro Pontes">Quatro Pontes</option>
+                <option value="Quedas do Iguaçu">Quedas do Iguaçu</option>
+                <option value="Querência do Norte">Querência do Norte</option>
+                <option value="Quinta do Sol">Quinta do Sol</option>
+                <option value="Quitandinha">Quitandinha</option>
+                <option value="Ramilândia">Ramilândia</option>
+                <option value="Rancho Alegre">Rancho Alegre</option>
+                <option value="Rancho Alegre D'Oeste">
+                  Rancho Alegre D'Oeste
+                </option>
+                <option value="Realeza">Realeza</option>
+                <option value="Rebouças">Rebouças</option>
+                <option value="Renascença">Renascença</option>
+                <option value="Reserva">Reserva</option>
+                <option value="Reserva do Iguaçu">Reserva do Iguaçu</option>
+                <option value="Ribeirão Claro">Ribeirão Claro</option>
+                <option value="Ribeirão do Pinhal">Ribeirão do Pinhal</option>
+                <option value="Rio Azul">Rio Azul</option>
+                <option value="Rio Bom">Rio Bom</option>
+                <option value="Rio Bonito do Iguaçu">
+                  Rio Bonito do Iguaçu
+                </option>
+                <option value="Rio Branco do Ivaí">Rio Branco do Ivaí</option>
+                <option value="Rio Branco do Sul">Rio Branco do Sul</option>
+                <option value="Rio Negro">Rio Negro</option>
+                <option value="Rolândia">Rolândia</option>
+                <option value="Roncador">Roncador</option>
+                <option value="Rondon">Rondon</option>
+                <option value="Rosário do Ivaí">Rosário do Ivaí</option>
+                <option value="Sabáudia">Sabáudia</option>
+                <option value="Salgado Filho">Salgado Filho</option>
+                <option value="Salto do Lontra">Salto do Lontra</option>
+                <option value="Santa Amélia">Santa Amélia</option>
+                <option value="Santa Cecília do Pavão">
+                  Santa Cecília do Pavão
+                </option>
+                <option value="Santa Cruz de Monte Castelo">
+                  Santa Cruz de Monte Castelo
+                </option>
+                <option value="Santa Fé">Santa Fé</option>
+                <option value="Santa Helena">Santa Helena</option>
+                <option value="Santa Inês">Santa Inês</option>
+                <option value="Santa Isabel do Ivaí">
+                  Santa Isabel do Ivaí
+                </option>
+                <option value="Santa Izabel do Oeste">
+                  Santa Izabel do Oeste
+                </option>
+                <option value="Santa Lúcia">Santa Lúcia</option>
+                <option value="Santa Maria do Oeste">
+                  Santa Maria do Oeste
+                </option>
+                <option value="Santa Mariana">Santa Mariana</option>
+                <option value="Santa Mônica">Santa Mônica</option>
+                <option value="Santa Tereza do Oeste">
+                  Santa Tereza do Oeste
+                </option>
+                <option value="Santa Terezinha de Itaipu">
+                  Santa Terezinha de Itaipu
+                </option>
+                <option value="Santana do Itararé">Santana do Itararé</option>
+                <option value="Santo Antônio da Platina">
+                  Santo Antônio da Platina
+                </option>
+                <option value="Santo Antônio do Caiuá">
+                  Santo Antônio do Caiuá
+                </option>
+                <option value="Santo Antônio do Paraíso">
+                  Santo Antônio do Paraíso
+                </option>
+                <option value="Santo Antônio do Sudoeste">
+                  Santo Antônio do Sudoeste
+                </option>
+                <option value="Santo Inácio">Santo Inácio</option>
+                <option value="São Carlos do Ivaí">São Carlos do Ivaí</option>
+                <option value="São Jerônimo da Serra">
+                  São Jerônimo da Serra
+                </option>
+                <option value="São João">São João</option>
+                <option value="São João do Caiuá">São João do Caiuá</option>
+                <option value="São João do Ivaí">São João do Ivaí</option>
+                <option value="São João do Triunfo">São João do Triunfo</option>
+                <option value="São Jorge do Ivaí">São Jorge do Ivaí</option>
+                <option value="São Jorge do Patrocínio">
+                  São Jorge do Patrocínio
+                </option>
+                <option value="São José da Boa Vista">
+                  São José da Boa Vista
+                </option>
+                <option value="São José das Palmeiras">
+                  São José das Palmeiras
+                </option>
+                <option value="São José dos Pinhais">
+                  São José dos Pinhais
+                </option>
+                <option value="São Manoel do Paraná">
+                  São Manoel do Paraná
+                </option>
+                <option value="São Mateus do Sul">São Mateus do Sul</option>
+                <option value="São Miguel do Iguaçu">
+                  São Miguel do Iguaçu
+                </option>
+                <option value="São Pedro do Iguaçu">São Pedro do Iguaçu</option>
+                <option value="São Pedro do Ivaí">São Pedro do Ivaí</option>
+                <option value="São Pedro do Paraná">São Pedro do Paraná</option>
+                <option value="São Sebastião da Amoreira">
+                  São Sebastião da Amoreira
+                </option>
+                <option value="São Tomé">São Tomé</option>
+                <option value="Sapopema">Sapopema</option>
+                <option value="Sarandi">Sarandi</option>
+                <option value="Saudade do Iguaçu">Saudade do Iguaçu</option>
+                <option value="Sengés">Sengés</option>
+                <option value="Serranópolis do Iguaçu">
+                  Serranópolis do Iguaçu
+                </option>
+                <option value="Sertaneja">Sertaneja</option>
+                <option value="Sertanópolis">Sertanópolis</option>
+                <option value="Siqueira Campos">Siqueira Campos</option>
+                <option value="Sulina">Sulina</option>
+                <option value="Tamarana">Tamarana</option>
+                <option value="Tamboara">Tamboara</option>
+                <option value="Tapejara">Tapejara</option>
+                <option value="Tapira">Tapira</option>
+                <option value="Teixeira Soares">Teixeira Soares</option>
+                <option value="Tijucas do Sul">Tijucas do Sul</option>
+                <option value="Toledo">Toledo</option>
+                <option value="Tomazina">Tomazina</option>
+                <option value="Três Barras do Paraná">
+                  Três Barras do Paraná
+                </option>
+                <option value="Tunas do Paraná">Tunas do Paraná</option>
+                <option value="Tuneiras do Oeste">Tuneiras do Oeste</option>
+                <option value="Tupãssi">Tupãssi</option>
+                <option value="Turvo">Turvo</option>
+                <option value="Ubiratã">Ubiratã</option>
+                <option value="Umuarama">Umuarama</option>
+                <option value="União da Vitória">União da Vitória</option>
+                <option value="Uniflor">Uniflor</option>
+                <option value="Uraí">Uraí</option>
+                <option value="Ventania">Ventania</option>
+                <option value="Vera Cruz do Oeste">Vera Cruz do Oeste</option>
+                <option value="Verê">Verê</option>
+                <option value="Virmond">Virmond</option>
+                <option value="Vitorino">Vitorino</option>
+                <option value="Wenceslau Braz">Wenceslau Braz</option>
+                <option value="Xambrê">Xambrê</option>
+                
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary mb-4">Cadastrar</button>
+          </form>
+          <div id="message-container"></div>
+          <div class="mb-3 d-flex justify-content-center">
+              <a class="btn btn-secondary" href="index.html">Voltar</a>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <p class="footer__text">hemouni@email.com</p>
+      </footer>
+    </div>
+
+    <script>
+      
+      document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+    
+        var formData = new FormData(this); 
+
+        fetch('cadastroDoador.php', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json()) 
+        .then(data => {
+          var messageContainer = document.getElementById('message-container');
+          messageContainer.innerHTML = `
+            <div class="alert alert-${data.status === 'success' ? 'success' : 'danger'}">
+              ${data.message}
+            </div>
+          `;
+        })
+        .catch(error => {
+          console.error('Erro ao enviar o formulário:', error);
+        });
+      });
+    </script>
+  
+  </body>
+</html>
+
