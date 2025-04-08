@@ -14,17 +14,17 @@
 
 # ♥️ Meu site de doação de sangue
 
-Esse site foi elaborado com a intenção de informar e icentificar as pessoas da importância da doação de sangue. Ele foi feito usando HTML, estilizado por CSS e Bootstrap, e usado JavaScript puro para informar quando a pessoa logar ela traz uma mensagem, criado um botão simulando uma API para receber dicas de saude e imagems com animições. 
+Esse site foi elaborado com a intenção de informar e icentificar as pessoas da importância da doação de sangue. Ele foi feito usando HTML, estilizado por CSS e Bootstrap, e usado JavaScript para informar quando a pessoa logar ela traz uma mensagem, criado um botão simulando uma API para receber dicas de saude e imagems com animições. 
 
 ---
 
 ## 💊 O pode ser feito no site?
 
-- Navegar nas paginas atraves dos menus.
-- Acessar a pagina de cadastro e realizar o cadastro por enquanto gravando em uma tabela.
-- Digitar seu CPF e Data de nascimento e logar. Por enquanto apenas aparece uma mensagem via Javascrip de "Bem vindo!".
-- Botão que recebe dicas de saúde.
-- O site esta responsivo, podendo acessar pelo celular ou computador.
+- **Navegar** nas paginas atraves dos menus.
+- Acessar a pagina de cadastro e realizar o **cadastro** armazenando os dados em uma tabela.
+- Digitar seu CPF e Data de nascimento e logar. Por enquanto apenas aparece uma mensagem via Javascrip de **"Bem vindo!"**.
+- **Botão** que recebe dicas de saúde.
+- O site esta **responsivo**, podendo acessar pelo celular ou computador.
 
 ---
 
@@ -41,7 +41,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 💻 O Projeto
 
-Fiz esse projeto como parte de um exercício de aprendizado. Quis algo leve, bonito e funcional, sem depender de frameworks ou ferramentas complicadas. A ideia é ir melhorando aos poucos e talvez até transformar isso num app futuramente. 😄
+Esse projeto foi realizado como parte de aprendizado. Foi feito um site onde traz imagems, informações e orientações para os usuarios utilizando ferramentas basicas para estilizar e tambem usado JS puro sem depender de frameworks. A intenção é melhorar ele aos poucos para ser um sistema automaziado para doação de sangue.
 
 ---
 
