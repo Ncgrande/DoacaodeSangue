@@ -1,169 +1,287 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 body {
-    font-family: "Hind Siliguri", sans-serif;
-    margin: 0;
+  font-family: "Hind Siliguri", sans-serif;
+  margin: 0;
 }
 
+/* Header */
 .header {
-    background-color: rgb(247, 67, 67);
-    padding: 20px 0;
+  background-color: rgb(247, 67, 67);
+  padding: 20px 0;
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header__logo img {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 .header__menu {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .menu__item {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .menu__link {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: border-bottom 0.3s;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: border-bottom 0.3s;
 }
 
 .menu__link:hover {
-    border-bottom: 3px solid rgb(156, 23, 23);
+  border-bottom: 3px solid rgb(156, 23, 23);
 }
 
-.header__button {
-    margin-top: 10px;
+/* Login no Header */
+.header__login {
+  display: flex;
+  align-items: center;
 }
 
+.header__login .form-group {
+  margin-bottom: 0;
+}
+
+.header__login .form-group input {
+  width: 120px;
+  padding: 5px;
+}
+
+.header__login .btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: rgb(247, 67, 67);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsividade Header */
 @media (max-width: 768px) {
-    .header__container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header__menu {
-        width: 100%;
-    }
-
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 20px;
+  .header__container {
+      flex-direction: column;
+      align-items: flex-start;
   }
-    .header__logo {
+
+  .header__logo {
       display: none;
   }
-  .menu__item {
-      text-align: center;
+
+  .header__menu {
+      width: 100%;
   }
-  .header__button {
-      width: 50%;
+
+  .menu {
       display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      text-align: center;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+  .header__login {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  .header__login .btn {
+      width: 100%;
       margin-top: 10px;
   }
-    
-
 }
 
-
+/* Seção Doador */
 .section-doador {
-    background-color: rgb(247, 67, 67);
-    color: whitesmoke;
-    padding: 50px 0;
+  background-color: rgb(247, 67, 67);
+  color: whitesmoke;
+  padding: 50px 0;
 }
 
 .section-doador__container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .section-doador__image {
-    flex: 1 1 450px;
-    text-align: center;
-    margin-bottom: 20px;
+  flex: 1 1 450px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .section-doador__image img {
-    max-width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .section-doador__content {
-    flex: 2 1 500px;
-    padding: 20px;
+  flex: 2 1 500px;
+  padding: 20px;
 }
 
 .section-doador__title {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .section-doador__text {
-    margin-bottom: 20px;
-    line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .section-doador__button {
-    text-align: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
-    .section-doador__container {
-        flex-direction: column;
-    }
+  .section-doador__container {
+      flex-direction: column;
+  }
 
-    .section-doador__image{
+  .section-doador__image {
       max-width: 80%;
-    }
-    .section-doador__content {
-        flex: 1 1 100%;
-    }
+  }
+
+  .section-doador__title {
+      font-size: 1.5rem;
+  }
+
+  .section-doador__text {
+      font-size: 0.9rem;
+  }
 }
 
-
-
+/* Seção Imagens */
 .section-imagens {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
-.section-imagens .row .col {
-    margin-bottom: 20px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Classe que será ativada para fazer o tremor */
+.col {
+  flex: 0 0 30%;
+  margin: 10px;
+}
+
+.col img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .section-imagens {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .row {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+/* Seção Login */
+.section-login {
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
+
+.section-login__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-login__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-login__form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.section-login__form .form-group {
+  flex: 1;
+}
+
+.section-login__form .form-group.col {
+  flex: 0 0 calc(50% - 7.5px);
+}
+
+.section-login__form .form-group.col-auto {
+  flex: 0 0 auto;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(247, 67, 67);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .section-login__form .form-row {
+      flex-direction: column;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #777777;
+  color: #ffffff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+/* Animação de Tremor */
 .shake {
   animation: shake-animation 0.5s infinite;
 }
 
-/* Definição do que é o "shake" */
 @keyframes shake-animation {
   0% { transform: translate(0px, 0px) rotate(0deg); }
   25% { transform: translate(2px, 2px) rotate(1deg); }
@@ -172,155 +290,24 @@ body {
   100% { transform: translate(0px, 0px) rotate(0deg); }
 }
 
-.modal-content {
+#btnTop {
+    display: none; /* Começa invisível */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
     background-color: rgb(247, 67, 67);
     color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    transition: background-color 0.3s;
 }
 
-.modal-body h1 {
-    margin-bottom: 15px;
+#btnTop:hover {
+    background-color: rgb(156, 23, 23);
 }
-
-
-.footer {
-    background-color: #777777;
-    color: #ffffff;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer__text {
-    margin: 0;
-}
-
-
-@media (max-width: 768px) {
-    .header__logo img {
-        max-width: 60%;
-    }
-
-    .section-doador__title {
-        font-size: 1.5rem;
-    }
-
-    .section-doador__text {
-        font-size: 0.9rem;
-    }
-}
-
-.section-login {
-    padding: 20px;
-    background-color: #f4f4f4;
-    margin-top: 20px;
-  }
-  
-  .section-login__container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section-login__title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .section-login__form .form-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-  }
-  
-  .section-login__form .form-group {
-    flex: 1;
-  }
-  
-  .section-login__form .form-group.col {
-    flex: 0 0 calc(50% - 7.5px); 
-  }
-  
-  .section-login__form .form-group.col-auto {
-    flex: 0 0 auto; 
-  }
-  
-  .btn {
-    width: 100%;
-  }
-  
-  @media (max-width: 767px) {
-    
-    .section-login__form .form-row {
-      flex-direction: column;
-    }
-  
-    .section-login__form .form-group {
-      width: 100%;
-    }
-  
-    .btn {
-      width: 100%; 
-    }
-  }
-  
-
-  .header__login {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header__login .form-group {
-    margin-bottom: 0; 
-  }
-  
-  .header__login .form-group input {
-    width: 120px; 
-  }
-  
-  .header__login .btn {
-    margin-left: 10px; 
-  }
-  
-  
-  @media (max-width: 767px) {
-    .header__container {
-      flex-direction: column; 
-      text-align: center;
-    }
-  
-    .menu {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .header__login {
-      margin-top: 20px;
-      width: 100%; 
-    }
-  
-    .header__login .form-group {
-      margin-bottom: 10px;
-    }
-  
-    .header__login .btn {
-      width: 100%; 
-    }
-  }
-  @media (max-width: 767px){
-    .section-imagens {
-      display: flex;
-      flex-direction: column;
-    }
-    .row {
-      display: flex;
-      flex-direction: column;
-    }
-  }

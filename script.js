@@ -118,3 +118,22 @@ carteirinha.addEventListener('mouseover', () => {
 carteirinha.addEventListener('mouseout', () => {
   carteirinha.src = imagemOriginal;
 });
+
+
+// Mostrar o botão quando rolar a página
+window.onscroll = function() {
+  const btn = document.getElementById("btnTop");
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      btn.style.display = "block";
+  } else {
+      btn.style.display = "none";
+  }
+};
+
+// Função para voltar ao topo
+document.getElementById("btnTop").addEventListener("click", function(){
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
+});

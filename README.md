@@ -14,7 +14,7 @@
 
 # ♥️ Meu site de doação de sangue
 
-<p align="justify">Esse site foi elaborado com a intenção de informar e icentificar as pessoas da importância da doação de sangue. Ele foi feito usando HTML, estilizado por CSS e Bootstrap, e usado JavaScript para informar quando a pessoa logar ela traz uma mensagem, criado um botão simulando uma API para receber dicas de saude e imagems com animições.</p>
+<p align="justify">Esse site foi elaborado com a intenção de informar e icentificar as pessoas da importância da doação de sangue. Ele foi feito usando HTML, estilizado por CSS e Bootstrap, e usado JavaScript para informar quando a pessoa logar ela traz uma mensagem, imagems com animições, criado um botão simulando uma API para receber dicas de saude e um outro para retornar ao inicio da pagina.</p>
 
 ---
 
@@ -24,6 +24,7 @@
 - Acessar a pagina de cadastro e realizar o **cadastro** armazenando os dados em uma tabela.
 - Digitar seu CPF e Data de nascimento e logar. Por enquanto apenas aparece uma mensagem via Javascrip de **"Bem vindo!"**.
 - **Botão** que recebe dicas de saúde.
+- Botão de voltar ao **topo** da página.
 - O site esta **responsivo**, podendo acessar pelo celular ou computador.
 
 ---
