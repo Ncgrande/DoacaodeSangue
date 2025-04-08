@@ -68,11 +68,7 @@
       <section class="section-cadastro">
         <div class="container section-cadastro__container">
           <h2 class="section-cadastro__title">Cadastro de Doador</h2>
-          <form
-            class="section-cadastro__form"
-            action="../../cadastroDoador.php"
-            method="POST"
-          >
+          <form id="formCadastro" class="section-cadastro__form">
             <div class="mb-3">
               <label for="nomeCompleto" class="form-label">Nome Completo</label>
               <input
@@ -628,38 +624,14 @@
           </div>
         </div>
       </section>
-      
+      <div id="tabelaCadastro" class="mt-5"></div>
       <footer class="footer">
         <p class="footer__text">hemouni@email.com</p>
       </footer>
     </div>
 
-    <script>
-      
-      document.getElementById('cadastroForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
+    <script src="scriptcadastro.js"></script>
     
-        var formData = new FormData(this); 
-
-        fetch('cadastroDoador.php', {
-          method: 'POST',
-          body: formData
-        })
-        .then(response => response.json()) 
-        .then(data => {
-          var messageContainer = document.getElementById('message-container');
-          messageContainer.innerHTML = `
-            <div class="alert alert-${data.status === 'success' ? 'success' : 'danger'}">
-              ${data.message}
-            </div>
-          `;
-        })
-        .catch(error => {
-          console.error('Erro ao enviar o formulário:', error);
-        });
-      });
-    </script>
-  
   </body>
 </html>
 
