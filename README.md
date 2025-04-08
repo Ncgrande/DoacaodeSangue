@@ -14,7 +14,7 @@
 
 # ♥️ Meu site de doação de sangue
 
-Esse site foi elaborado com a intenção de informar e icentificar as pessoas da importância da doação de sangue. Ele foi feito usando HTML, estilizado por CSS e Bootstrap, e usado JavaScript para informar quando a pessoa logar ela traz uma mensagem, criado um botão simulando uma API para receber dicas de saude e imagems com animições. 
+<p align="justify">Esse site foi elaborado com a intenção de informar e icentificar as pessoas da importância da doação de sangue. Ele foi feito usando HTML, estilizado por CSS e Bootstrap, e usado JavaScript para informar quando a pessoa logar ela traz uma mensagem, criado um botão simulando uma API para receber dicas de saude e imagems com animições.</p>
 
 ---
 
@@ -41,7 +41,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 💻 O Projeto
 
-Esse projeto foi realizado como parte de aprendizado. Foi feito um site onde traz imagems, informações e orientações para os usuarios utilizando ferramentas basicas para estilizar e tambem usado JS puro sem depender de frameworks. A intenção é melhorar ele aos poucos para ser um sistema automaziado para doação de sangue.
+<p align="justify">Esse projeto foi realizado como parte de aprendizado. Foi feito um site onde traz imagems, informações e orientações para os usuarios utilizando ferramentas basicas para estilizar e tambem usado JS puro sem depender de frameworks. A intenção é melhorar ele aos poucos para ser um sistema automaziado para doação de sangue.</p>
 
 ---
 
