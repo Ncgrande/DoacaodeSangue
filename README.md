@@ -52,7 +52,7 @@ Estudantes do 3º semestre de Análise e desenvolvimento de Sistemas:
 
 - Nilson Grande
 - Vinicius Gabriel
-- Vinicius Andrade
+- Vinicius Oliveira
 
 
 
