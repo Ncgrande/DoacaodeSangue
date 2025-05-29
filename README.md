@@ -48,11 +48,9 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 👽 Feito por
 
-Estudantes do 3º semestre de Análise e desenvolvimento de Sistemas:
+Estudante do 3º semestre de Análise e desenvolvimento de Sistemas:
 
 - Nilson Grande
-- Vinicius Gabriel
-- Vinicius Oliveira
 
 
 
